@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Help My Device</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="loginButtonText">Login</string>
+    <string name="registerLinkText">Not Registered? Register Here</string>
+    <string name="emailRegister">Enter Your Email</string>
+    <string name="passwordRegister">Enter Your Password</string>
+    <string name="passwordConfirm">Confirm Your Password</string>
+    <string name="loginLink">Are you already registered? Login here</string>
+    <string name="title_activity_login">Login</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="dialog_select_photo">SelectPhoto</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="dialog_post">PostDialog</string>
+    <string name="forgotPass">Forgot Password?</string>
+    <string name="registerButton">Register</string>
+    <string name="addPhotoButton">Add a Photo</string>
+    <string name="firstName">First Name (Required)</string>
+    <string name="lastName">Last Name (Not required)</string>
+    <string name="phone">Phone (Not required)</string>
+    <string name="appDescription">This app was made by Yotam Gurfinkel. It\'s an app for sharing problems with your various devices and getting technicians or other users to help you fix them.</string>
+    <string name="enterComment">Enter a Comment</string>
+    <string name="postTitleInput">Enter a Title</string>
+    <string name="postDescriptionInput">Enter a Description for the Problem</string>
+    <string name="deletePhoto">Delete Photo</string>
+    <string name="galleryChoose">Choose a photo from gallery</string>
+    <string name="takePhoto">Take a Photo</string>
+    <string name="updateDetails">Update Details</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/ic_more_vert_black_24dp">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_mark_solved"
+                android:icon="@drawable/menu_solved"
+                android:visible="false"
+                app:showAsAction="ifRoom"
+                android:title="Mark Solved" />
+
+            <item
+                android:id="@+id/menu_delete"
+                android:icon="@drawable/menu_delete"
+                android:visible="false"
+                app:showAsAction="ifRoom"
+                android:title="Delete Post" />
+
+            <item
+                android:id="@+id/menu_follow_post"
+                android:icon="@drawable/menu_follow"
+                app:showAsAction="ifRoom"
+                android:title="Follow Post" />
+
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "95377183088",
+    "firebase_url": "https://helpmydevice-11df6.firebaseio.com",
+    "project_id": "helpmydevice-11df6",
+    "storage_bucket": "helpmydevice-11df6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95377183088:android:9f1826466beb8486",
+        "android_client_info": {
+          "package_name": "com.yotam.customer.helpmydevice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95377183088-5sbgovn2fbn8pvot9nko8mcs3rds5vij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzKczU_MPUtZxlO16XG97vGnt-Ov3tAjE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
