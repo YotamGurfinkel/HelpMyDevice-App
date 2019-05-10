@@ -315,6 +315,8 @@ public class AddPostDialog extends DialogFragment implements View.OnClickListene
                                                             deleteProgress.dismiss();
                                                             if(task.isSuccessful()){
                                                                 Toast.makeText(getContext(), "Post Image Deleted Successfully", Toast.LENGTH_SHORT).show();
+                                                                deletePhoto.setVisibility(View.INVISIBLE);
+                                                                postImg.setImageDrawable(getResources().getDrawable(R.drawable.noimage));
                                                             }else{
                                                                 Toast.makeText(getContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                                             }
