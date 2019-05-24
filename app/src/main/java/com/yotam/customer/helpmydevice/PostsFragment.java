@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -45,6 +46,7 @@ public class PostsFragment extends Fragment implements SearchView.OnQueryTextLis
     private ProgressDialog progressDialog;
     private static Post postForEdit;
     private String[] userDetails;
+    private RelativeLayout noPosts;
     private static final String TAG = "PostsFragment";
 
 
@@ -64,6 +66,7 @@ public class PostsFragment extends Fragment implements SearchView.OnQueryTextLis
         postList = new ArrayList<>();
         adapter = new PostAdapter(getContext(), R.layout.row_post, postList);
         progressDialog = new ProgressDialog(getContext());
+        noPosts = view.findViewById(R.id.noPosts);
         progressDialog.setMessage("Loading Posts...");
         progressDialog.setCancelable(false);
         progressDialog.show();
@@ -79,7 +82,12 @@ public class PostsFragment extends Fragment implements SearchView.OnQueryTextLis
                 Collections.reverse(postList);
                 if (searchView != null)
                     adapter.getFilter().filter(searchView.getQuery());
-                mPostsList.setAdapter(adapter);
+                if(!postList.isEmpty()) {
+                    mPostsList.setAdapter(adapter);
+                    noPosts.setVisibility(View.GONE);
+                }else{
+                    noPosts.setVisibility(View.VISIBLE);
+                }
                 progressDialog.dismiss();
             }
 

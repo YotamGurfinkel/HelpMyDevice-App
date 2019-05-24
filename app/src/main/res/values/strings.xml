@@ -32,4 +32,5 @@
     <string name="galleryChoose">Choose a photo from gallery</string>
     <string name="takePhoto">Take a Photo</string>
     <string name="updateDetails">Update Details</string>
+    <string name="noposts">There are currently no posts</string>
 </resources>
