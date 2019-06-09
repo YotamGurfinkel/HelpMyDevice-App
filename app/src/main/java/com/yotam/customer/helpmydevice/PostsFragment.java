@@ -189,7 +189,9 @@ public class PostsFragment extends Fragment implements SearchView.OnQueryTextLis
 
     @Override
     public boolean onQueryTextChange(String newText) {
-        ((PostAdapter) mPostsList.getAdapter()).getFilter().filter(newText);
+        if (mPostsList.getAdapter() != null) {
+            ((PostAdapter) mPostsList.getAdapter()).getFilter().filter(newText);
+        }
         return true;
     }
 
